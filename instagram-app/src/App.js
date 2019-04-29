@@ -2,10 +2,38 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import SearchBar from '././src/components/SearchBar/SearchBar.js';
+import PostContainer from '././src/components/PostContainer/PostContainer.js';
+import CommentSection from '././src/components/CommentSection/CommentSection.js';
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+
+    <div className="search-bar">
+    
+    
+    </div>
+
+
+    <div className="post-container">
+    
+    
+    </div>
+
+
+    <div className="comment-section">
+    
+    
+    </div>
+
+
+
+
+
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +46,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+
+
     </div>
   );
 }
