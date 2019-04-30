@@ -22,7 +22,7 @@ const PostContainer = props => {
 
 
             <div className="post-main-image">
-                <img src={props.dummyData.imageUrl} alt="Main Image" />
+                <img src={props.dummyData.imageUrl} alt="User Post" />
             </div>
 
 

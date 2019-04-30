@@ -1,11 +1,11 @@
 import React from 'react';
 import dummyData from './dummy-data.js';
 
-const CommentSection = () => {
+const CommentSection = props => {
     return (
-        //Main Container div for Comment Section
+        //Main Container div for content for Comment Section
 
-        <div className="comment-section">
+        <div className="user-comments">
             <div className="username-section">
                 <p>
                     <strong>{props.dummyData.comments.username}</strong>
@@ -19,7 +19,6 @@ const CommentSection = () => {
             </div>
 
         </div>
-
 
         //Container div for Comment Section Ends Here
     );
