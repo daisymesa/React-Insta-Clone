@@ -1,56 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import SearchBar from '././src/components/SearchBar/SearchBar.js';
-import PostContainer from '././src/components/PostContainer/PostContainer.js';
-import CommentSection from '././src/components/CommentSection/CommentSection.js';
+
+import SearchBar from './components/SearchBar/SearchBar.js';
+
+import PostContainer from './components/PostContainer/PostContainer.js';
+
+import dummyData from './dummy-data.js';
 
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  constructor() {
+    super();
 
-    <div className="search-bar">
-    
-    
-    </div>
+    this.state = {
+      dummyData: dummyData
+    };
+  }
 
+  render() {
+    return (
+      <div className="App">
 
-    <div className="post-container">
-    
-    
-    </div>
-
-
-    <div className="comment-section">
-    
-    
-    </div>
+        <div className="search-bar">
+          <SearchBar />
+        </div>
 
 
+        <div className="post-container">
+          <PostContainer dummyData={this.state.dummyData} />
+        </div>
+
+      </div>
 
 
 
+    )
+  }
 
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-
-
-    </div>
-  );
 }
+
+
 
 export default App;
