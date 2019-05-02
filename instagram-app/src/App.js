@@ -7,7 +7,6 @@ import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
 
 import DummyData from './components/DummyData/DummyData';
-// import dummyData from '.dummy-data';
 
 
 class App extends Component {
@@ -15,7 +14,7 @@ class App extends Component {
     super();
 
     this.state = {
-      dummyData: dummyData
+      dummyData: DummyData
     };
   }
 

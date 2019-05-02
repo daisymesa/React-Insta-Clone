@@ -1,4 +1,6 @@
 import React from 'react';
+import './CommentSection.css';
+
 
 import DummyData from '../DummyData/DummyData';
 

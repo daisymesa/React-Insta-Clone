@@ -1,11 +1,13 @@
 import React from 'react';
+import './SearchBar.css';
+
 
 const SearchBar = () => {
     return (
         //Main Container div for Search Bar
         <div className="search-bar-section">
             <div className="logo-image-section">
-
+                <img src="./icons/instagram-logo.png" alt="Instagram Logo" />
             </div>
 
             
