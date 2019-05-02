@@ -1,5 +1,10 @@
 import React from 'react';
 
+import CommentSection from '../CommentSection/CommentSection';
+
+import DummyData from '../DummyData/DummyData';
+
+// import CommentSection from '../components/'
 
 
 const PostContainer = props => {
@@ -38,7 +43,9 @@ const PostContainer = props => {
 
             </div>
 
+            <div className="comment-section">
 
+            </div>
 
 
         </div>

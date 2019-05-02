@@ -1,5 +1,6 @@
 import React from 'react';
-import dummyData from './dummy-data.js';
+
+import DummyData from '../DummyData/DummyData';
 
 const CommentSection = props => {
     return (

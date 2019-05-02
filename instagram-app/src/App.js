@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 
 
-import SearchBar from './components/SearchBar/SearchBar.js';
+import SearchBar from './components/SearchBar/SearchBar';
 
-import PostContainer from './components/PostContainer/PostContainer.js';
+import PostContainer from './components/PostContainer/PostContainer';
 
-import dummyData from './dummy-data.js';
+import DummyData from './components/DummyData/DummyData';
+// import dummyData from '.dummy-data';
 
 
 class App extends Component {
