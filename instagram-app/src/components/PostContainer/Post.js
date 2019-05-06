@@ -6,7 +6,6 @@ const Post = props => {
     return (
         <div className="post-section">
 
-
             <div className="post-header">
 
                 <div className="user-profile-picture">
@@ -23,7 +22,6 @@ const Post = props => {
                 <img src={props.instaData.imageUrl} alt="User Post" />
             </div>
 
-
             <div className="interact-icons">
 
                 <div className="icon">
@@ -35,12 +33,6 @@ const Post = props => {
                 </div>
 
             </div>
-
-            <div className="comment-section">
-
-            </div>
-
-
         </div>
     );
 };

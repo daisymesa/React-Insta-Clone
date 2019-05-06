@@ -2,17 +2,24 @@ import React from 'react';
 import './PostContainer.css';
 
 import Post from './Post';
+import CommentSection from '../CommentSection/CommentSection';
 
 
 const PostContainer = props => {
     return (
-        //Main Container div for Post Container
-        <div className="post-container-section">
-            {props.instaData.map(instaDataFromMap => {
-                return <Post instaData={instaDataFromMap} />
-            })}
+        <div className="main-post-container">
+
+            <div className="post-container-section">
+                {props.instaData.map(item => {
+                    return <Post instaData={item} />
+                })}
+            </div>
+
+            <div className="comment-container-section">
+                <CommentSection />
+            </div>
+
         </div>
-        //Container div for Post Container Ends Here
     );
 };
 
