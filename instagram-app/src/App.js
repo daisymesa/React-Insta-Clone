@@ -12,9 +12,8 @@ import DummyData from './components/DummyData/DummyData';
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
-      dummyData: DummyData
+      instaData: DummyData
     };
   }
 
@@ -28,7 +27,7 @@ class App extends Component {
 
 
         <div className="post-container">
-          <PostContainer dummyData={this.state.dummyData} />
+          <PostContainer instaData={this.state.instaData} />
         </div>
 
       </div>
