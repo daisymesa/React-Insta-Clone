@@ -2,7 +2,7 @@ import React from 'react';
 import './CommentSection.css';
 
 
-import DummyData from '../DummyData/DummyData';
+// import DummyData from '../DummyData/DummyData';
 
 const CommentSection = props => {
     return (
@@ -11,13 +11,13 @@ const CommentSection = props => {
         <div className="user-comments">
             <div className="username-section">
                 <p>
-                    <strong>{props.dummyData.comments.username}</strong>
+                    <strong>{props.instaData.comments.username}</strong>
                 </p>
             </div>
 
             <div className="comment-text">
                 <p>
-                    {props.dummyData.comments.text}
+                    {props.instaData.comments.text}
                 </p>
             </div>
 

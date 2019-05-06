@@ -3,7 +3,7 @@ import './PostContainer.css';
 
 import Post from './Post';
 
-import DummyData from '../DummyData/DummyData';
+// import DummyData from '../DummyData/DummyData';
 
 // import CommentSection from '../components/'
 
@@ -14,16 +14,13 @@ const PostContainer = props => {
         <div className="post-container-section">
 
             <div className="post">
-                <Post dummyData={props.dummyData} />
-
-                {props.dummyData.map(dummyDataFromMap => {
-                    return <DummyData dummyData={dummyDataFromMap} />
+                <Post instaData={props.instaData} />
+                {props.instaData.map(instaDataFromMap => {
+                    return <InstaData instaData={instaDataFromMap} />
                 })}
-
             </div>
 
         </div>
-
         //Container div for Post Container Ends Here
     );
 };
