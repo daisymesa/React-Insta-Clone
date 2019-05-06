@@ -1,15 +1,10 @@
 import React from 'react';
 import './PostContainer.css';
 
-// import DummyData from '../DummyData/DummyData';
-
-// import CommentSection from '../components/'
-
 
 const Post = props => {
     return (
-        //Main Container div for Post Container
-        <div className="post-container-section">
+        <div className="post-section">
 
 
             <div className="post-header">
@@ -23,7 +18,6 @@ const Post = props => {
                 </div>
 
             </div>
-
 
             <div className="post-main-image">
                 <img src={props.instaData.imageUrl} alt="User Post" />
@@ -48,10 +42,8 @@ const Post = props => {
 
 
         </div>
-        //Container div for Post Container Ends Here
     );
 };
-
 
 
 export default Post;

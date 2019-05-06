@@ -1,15 +1,25 @@
 import React from 'react';
 import './CommentSection.css';
 
+import Comment from './Comment';
 
-// import DummyData from '../DummyData/DummyData';
 
 const CommentSection = props => {
     return (
-        //Main Container div for content for Comment Section
+        <div className="comment-section-container">
+            {props.instaData.map(instaDataFromMap => {
+                return <Comment instaData={instaDataFromMap} />
+            })}
+        </div>
+    );
+};
 
-        <div className="user-comments">
-            <div className="username-section">
+
+export default CommentSection;
+
+
+
+{/* <div className="username-section">
                 <p>
                     <strong>{props.instaData.comments.username}</strong>
                 </p>
@@ -19,13 +29,4 @@ const CommentSection = props => {
                 <p>
                     {props.instaData.comments.text}
                 </p>
-            </div>
-
-        </div>
-
-        //Container div for Comment Section Ends Here
-    );
-};
-
-
-export default CommentSection;
+            </div> */}
