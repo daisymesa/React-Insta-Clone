@@ -27,7 +27,6 @@ const SearchBar = () => {
 
             <div className="search-bar-icons">
 
-
             <div className="icon">
                 <img src="https://static.thenounproject.com/png/7039-200.png" alt="Compass Icon" />
                 </div>
@@ -46,6 +45,5 @@ const SearchBar = () => {
         //Container div for Search Bar Ends Here
     );
 };
-
 
 export default SearchBar;

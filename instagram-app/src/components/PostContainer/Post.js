@@ -26,12 +26,12 @@ const Post = props => {
 
             <div className="interact-icons">
 
-                <div className="icon">
-                    <img src="https://image.flaticon.com/icons/png/512/23/23228.png" alt="User Icon" />
+                <div className="icon-heart">
+                    <img src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/heart-outline-512.png" alt="Heart Icon" />
                 </div>
 
                 <div className="icon">
-
+                <img src="https://banner2.kisspng.com/20180410/gkq/kisspng-computer-icons-download-internet-forum-comment-5acc485b875552.7926656815233373075543.jpg" alt="Comment Bubble Icon" />
                 </div>
 
             </div>

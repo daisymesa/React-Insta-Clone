@@ -14,13 +14,8 @@ const PostContainer = props => {
                 return <Post instaData={item} />
             })}
 
-
-
         </div>
-
     );
 };
-
-
 
 export default PostContainer;

@@ -1,7 +1,3 @@
-.post-section {
-    border: solid gray;
-}
-
 .post-header {
     display: flex;
     align-items: center; 
@@ -14,12 +10,22 @@
 }
 
 .username-section {
-    /* border: solid orange; */
     font-size: .75rem;
 }
 
 .post-main-image img {
-    /* border: solid green; */
     height: 500px;
     width: 100%;
+}
+
+.icon-heart img {
+    height: 22px;
+}
+
+.interact-icons {
+    display: flex;
+}
+
+.interact-icons img {
+    padding: 4px 6px;
 }
