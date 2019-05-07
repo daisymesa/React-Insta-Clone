@@ -11,6 +11,7 @@ const CommentSection = props => {
                 return <Comment instaData={item} />
             })}
 
+            <CommentSection instaData={props.instaData} />
 
         </div>
     );

@@ -9,14 +9,17 @@
 
 .user-profile-picture img {
     border-radius: 50%;
-    height: 50px;
-    padding: 0 15px;
+    height: 30px;
+    padding: 0 10px;
 }
 
 .username-section {
     border: solid orange;
+    font-size: .75rem;
 }
 
-.post-main-image {
+.post-main-image img {
     border: solid green;
+    height: 500px;
+    width: 500px;
 }
