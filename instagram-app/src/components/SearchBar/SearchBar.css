@@ -1,0 +1,38 @@
+.logo-image-section img {
+    height: 35px;
+}
+
+.search-bar-section {
+    display: flex;
+}
+
+.logo-image-section {
+    padding: 10px 0;
+    display: flex;
+}
+
+.logo-icon img {
+    padding-right: 7px;
+    border-right: 1px solid lightgray;
+}
+
+.logo-text img {
+    padding: 7px 0 0 7px;
+}
+
+.search-bar {
+    margin: auto;
+}
+
+.icon img {
+    height: 18px;
+}
+
+.search-bar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-icons img{
+    padding: 0 7px;
+}

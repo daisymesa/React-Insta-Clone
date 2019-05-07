@@ -27,7 +27,7 @@ const Post = props => {
             <div className="interact-icons">
 
                 <div className="icon">
-
+                    <img src="https://image.flaticon.com/icons/png/512/23/23228.png" alt="User Icon" />
                 </div>
 
                 <div className="icon">
@@ -36,9 +36,15 @@ const Post = props => {
 
             </div>
 
+            <div className="post-likes">
+
+                <strong>{props.instaData.likes} likes </strong>
+
+            </div>
+
             <div className="user-comments">
-            
-            <CommentSection comments={props.instaData.comments} />
+
+                <CommentSection comments={props.instaData.comments} />
 
             </div>
 

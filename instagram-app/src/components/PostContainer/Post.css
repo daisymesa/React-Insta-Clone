@@ -1,5 +1,5 @@
 .post-section {
-    border: solid red;
+    border: solid gray;
 }
 
 .post-header {
@@ -14,12 +14,12 @@
 }
 
 .username-section {
-    border: solid orange;
+    /* border: solid orange; */
     font-size: .75rem;
 }
 
 .post-main-image img {
-    border: solid green;
+    /* border: solid green; */
     height: 500px;
-    width: 500px;
+    width: 100%;
 }
