@@ -10,6 +10,8 @@ const CommentSection = props => {
             {props.instaData.map(item => {
                 return <Comment instaData={item} />
             })}
+
+
         </div>
     );
 };

@@ -1,0 +1,22 @@
+.post-section {
+    border: solid red;
+}
+
+.post-header {
+    display: flex;
+    align-items: center; 
+}
+
+.user-profile-picture img {
+    border-radius: 50%;
+    height: 50px;
+    padding: 0 15px;
+}
+
+.username-section {
+    border: solid orange;
+}
+
+.post-main-image {
+    border: solid green;
+}
