@@ -17,6 +17,12 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    this.setState({
+      data: ""
+    })
+  }
+
   render() {
     return (
       <div className="App">
