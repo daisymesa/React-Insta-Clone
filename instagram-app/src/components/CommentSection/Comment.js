@@ -7,13 +7,13 @@ const Comment = props => {
         <div className="user-comments">
             <div className="username-section">
                 <p>
-                    <strong>{props.instaData.comments.username}</strong>
+                    <strong>{props.comment.username}</strong>
                 </p>
             </div>
 
             <div className="comment-text">
                 <p>
-                    {props.instaData.comments.text}
+                    {props.comment.text}
                 </p>
             </div>
 

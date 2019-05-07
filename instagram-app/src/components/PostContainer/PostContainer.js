@@ -14,7 +14,7 @@ const PostContainer = props => {
                 return <Post instaData={item} />
             })}
 
-            <CommentSection instaData={props.instaData} />
+
 
         </div>
 

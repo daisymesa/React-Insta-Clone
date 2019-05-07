@@ -4,17 +4,26 @@ import './CommentSection.css';
 import Comment from './Comment';
 
 
-const CommentSection = props => {
-    return (
-        <div className="comment-section-container">
-            {props.instaData.map(item => {
-                return <Comment instaData={item} />
-            })}
+class CommentSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            comments: props.comments
+        }
+        console.log(this.state.comments);
+    }
 
-            <CommentSection instaData={props.instaData} />
-
-        </div>
-    );
+    render () {
+        return (
+            <div className="comment-section-container">
+    
+                {this.state.comments.map(item => {
+                    return <Comment comment={item} />
+                })}
+    
+            </div>
+        );
+    }
 };
 
 

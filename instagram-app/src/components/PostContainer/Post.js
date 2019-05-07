@@ -1,6 +1,8 @@
 import React from 'react';
 import './Post.css';
 
+import CommentSection from '../CommentSection/CommentSection';
+
 
 const Post = props => {
     return (
@@ -33,6 +35,14 @@ const Post = props => {
                 </div>
 
             </div>
+
+            <div className="user-comments">
+            
+            <CommentSection comments={props.instaData.comments} />
+
+            </div>
+
+
         </div>
     );
 };
