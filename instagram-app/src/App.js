@@ -17,19 +17,6 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.setState({
-      commentText: ""
-    })
-  }
-
-  commentHandler = (event) => {
-    this.setState({
-      commentText: event.state.value
-    })
-    console.log(this.state.commentText)
-  }
-
   render() {
     return (
       <div className="App">

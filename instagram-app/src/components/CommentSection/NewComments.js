@@ -1,25 +1,23 @@
 import React from 'react';
-import './Comment.css';
 
 
-const Comment = props => {
+
+const NewComments = props => {
     return (
-        <div className="user-comments">
+        <div className="new-comment-section">
 
-            <div className="username-section">
-                <p>
-                    <strong>{props.comment.username}</strong>
-                </p>
-            </div>
-            <div className="comment-text">
-                <p>
-                    {props.comment.text}
-                </p>
+            <div className="new-comment-field">
+                <input type="text"
+                    value={props.newComment}
+                    placeholder="Add a comment..." />
             </div>
 
         </div>
+
     );
 };
 
+export default NewComments;
 
-export default Comment;
+
+

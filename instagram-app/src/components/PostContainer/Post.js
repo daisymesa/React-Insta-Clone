@@ -43,14 +43,7 @@ const Post = props => {
                 <CommentSection comments={props.instaData.comments} />
             </div>
 
-            <div className="new-comments">
 
-                <imput
-                    name="text"
-                    value={props.commentText}
-                    onChange={props.commentHandler} />
-
-            </div>
         </div>
     );
 };

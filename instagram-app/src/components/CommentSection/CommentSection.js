@@ -2,6 +2,7 @@ import React from 'react';
 import './CommentSection.css';
 
 import Comment from './Comment';
+import NewComments from './NewComments';
 
 
 class CommentSection extends React.Component {
@@ -13,6 +14,19 @@ class CommentSection extends React.Component {
         console.log(this.state.comments);
     }
 
+    componentDidMount() {
+        this.setState({
+          newComment: ""
+        })
+      }
+    
+      commentHandler = (event) => {
+        this.setState({
+          newComment: event.state.value
+        })
+        console.log(this.state.newComment)
+      }
+
     render () {
         return (
             <div className="comment-section-container">
@@ -21,7 +35,7 @@ class CommentSection extends React.Component {
                     return <Comment comment={item} />
                 })}
 
-
+                <NewComments />
     
             </div>
         );
