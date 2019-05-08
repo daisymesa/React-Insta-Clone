@@ -36,3 +36,10 @@
 .search-bar-icons img{
     padding: 0 7px;
 }
+
+input {
+    text-align: center;
+    width: 200px;
+    border: solid 1px lightgray;
+    padding: 3px 0;
+}

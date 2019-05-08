@@ -19,8 +19,15 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      data: ""
+      commentText: ""
     })
+  }
+
+  commentHandler = (event) => {
+    this.setState({
+      commentText: event.state.value
+    })
+    console.log(this.state.commentText)
   }
 
   render() {
@@ -30,7 +37,6 @@ class App extends Component {
         <div className="search-bar">
           <SearchBar />
         </div>
-
 
         <div className="post-container">
           <PostContainer instaData={this.state.instaData} />

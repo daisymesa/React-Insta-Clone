@@ -20,6 +20,8 @@ class CommentSection extends React.Component {
                 {this.state.comments.map(item => {
                     return <Comment comment={item} />
                 })}
+
+
     
             </div>
         );
