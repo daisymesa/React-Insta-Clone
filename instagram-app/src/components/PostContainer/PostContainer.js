@@ -11,13 +11,35 @@ const PostContainer = props => {
     return (
 
         <div className="post-container-section">
-        
+
             {props.instaData.map(item => {
-                return <Post instaData={item} />
+                return <Post instaData={item} key="" />
             })}
 
         </div>
     );
+};
+
+console.log("Proptypes");
+
+PostContainer.propTypes = {
+    instaData: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string,
+            username: PropTypes.string,
+            thumbnailUrl: PropTypes.string,
+            likes: PropTypes.number,
+            timestamp: PropTypes.string,
+            comments: PropTypes.arrayOf(
+                PropTypes.shape({
+                    id: PropTypes.string,
+                    username: PropTypes.string,
+                    text: PropTypes.string
+                })
+            )
+
+        })
+    )
 };
 
 export default PostContainer;
