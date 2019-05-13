@@ -17,6 +17,13 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    this.setState({
+      newComment: ""
+    })
+  }
+
+
   render() {
     return (
       <div className="App">

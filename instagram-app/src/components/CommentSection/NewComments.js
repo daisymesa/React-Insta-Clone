@@ -7,9 +7,12 @@ const NewComments = props => {
         <div className="new-comment-section">
 
             <div className="new-comment-field">
-                <input type="text"
-                    value={props.newComment}
-                    placeholder="Add a comment..." />
+                <form>
+                    <input type="text"
+                        value={props.newComment}
+                        placeholder="Add a comment..." />
+                </form>
+
             </div>
 
         </div>

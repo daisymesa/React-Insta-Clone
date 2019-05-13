@@ -10,15 +10,11 @@ class CommentSection extends React.Component {
         super(props);
         this.state = {
             comments: props.comments
+            
         }
         console.log(this.state.comments);
     }
 
-    componentDidMount() {
-        this.setState({
-          newComment: ""
-        })
-      }
     
       commentHandler = (event) => {
         this.setState({
