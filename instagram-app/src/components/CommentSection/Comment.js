@@ -1,6 +1,8 @@
 import React from 'react';
 import './Comment.css';
 
+import PropTypes from 'prop-types';
+
 
 const Comment = props => {
     return (

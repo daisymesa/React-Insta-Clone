@@ -3,6 +3,8 @@ import './Post.css';
 
 import CommentSection from '../CommentSection/CommentSection';
 
+import PropTypes from 'prop-types';
+
 
 const Post = props => {
     return (

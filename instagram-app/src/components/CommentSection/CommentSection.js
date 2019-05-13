@@ -4,6 +4,9 @@ import './CommentSection.css';
 import Comment from './Comment';
 import NewComments from './NewComments';
 
+import PropTypes from 'prop-types';
+
+
 
 class CommentSection extends React.Component {
     constructor(props) {
