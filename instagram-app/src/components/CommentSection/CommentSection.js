@@ -25,10 +25,10 @@ class CommentSection extends React.Component {
         })
       }
 
-      addNewComment = (event) => {
-        const newComment = {text: this.state.newComment};
-        this.state.comments.push(newComment);
-    }
+    //   addNewComment = (event) => {
+    //     const newComment = {text: this.state.newComment};
+    //     this.state.comments.push(newComment);
+    // }
 
     render () {
         return (
@@ -42,8 +42,6 @@ class CommentSection extends React.Component {
                     comment={this.state.comment}
                     addComment={this.commentHandler}
                 />
-
-                <NewComments />
     
             </div>
         );
