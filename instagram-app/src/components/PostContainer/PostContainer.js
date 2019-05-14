@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 
 
 const PostContainer = props => {
-    console.log("hi");
 
     return (
         <div className="post-container-section">

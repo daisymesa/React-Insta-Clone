@@ -17,14 +17,18 @@ class CommentSection extends React.Component {
         }
         console.log(this.state.comments);
     }
-
     
+
       commentHandler = (event) => {
         this.setState({
           newComment: event.state.value
         })
-        console.log(this.state.newComment)
       }
+
+      addNewComment = (event) => {
+        const newComment = {text: this.state.newComment};
+        this.state.comments.push(newComment);
+    }
 
     render () {
         return (
