@@ -8,19 +8,20 @@ import PropTypes from 'prop-types';
 
 
 const PostContainer = props => {
-    return (
+    console.log("hi");
 
+    return (
         <div className="post-container-section">
 
             {props.instaData.map(item => {
-                return <Post instaData={item} key="" />
+                return <Post instaData={item} key={props.instaData.id} />
             })}
 
         </div>
     );
 };
 
-console.log("Proptypes");
+console.log("Proptypes below");
 
 PostContainer.propTypes = {
     instaData: PropTypes.arrayOf(

@@ -18,6 +18,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log("componentDidMount is Updating!")
     this.setState({
       newComment: ""
     })
@@ -33,7 +34,7 @@ class App extends Component {
         </div>
 
         <div className="post-container">
-          <PostContainer instaData={this.state.instaData} />
+          <PostContainer instaData={this.state.instaData} key={this.state.id} />
         </div>
 
       </div>

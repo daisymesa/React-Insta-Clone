@@ -34,6 +34,11 @@ class CommentSection extends React.Component {
                     return <Comment comment={item} />
                 })}
 
+                <NewComments 
+                    comment={this.state.comment}
+                    addComment={this.commentHandler}
+                />
+
                 <NewComments />
     
             </div>

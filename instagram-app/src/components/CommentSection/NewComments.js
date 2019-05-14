@@ -8,10 +8,11 @@ const NewComments = props => {
         <div className="new-comment-section">
 
             <div className="new-comment-field">
-                <form>
+                <form onSubmit={props.addComment}>
                     <input type="text"
                         value={props.newComment}
-                        placeholder="Add a comment..." />
+                        placeholder="Add a comment..." 
+                        />
                 </form>
 
             </div>
