@@ -13,7 +13,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      instaData: DummyData
+      instaData: DummyData,
+      newComments: ""
     };
   }
 
@@ -23,6 +24,10 @@ class App extends Component {
       newComment: ""
     })
   }
+
+  // changeHandler = event => {
+  //   this.setState ({ newComments: event.target.value});
+  // };
 
 
   render() {
