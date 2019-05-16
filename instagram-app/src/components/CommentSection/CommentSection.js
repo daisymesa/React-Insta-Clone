@@ -22,7 +22,7 @@ class CommentSection extends React.Component {
                 ...this.state.comments,
                 {
                     text: this.state.newCommentText,
-                    username: "Daisy"
+                    username: "daisy"
                 }
             ],
             newCommentText: ""

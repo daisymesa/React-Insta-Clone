@@ -25,11 +25,6 @@ class App extends Component {
     })
   }
 
-  // changeHandler = event => {
-  //   this.setState ({ newComments: event.target.value});
-  // };
-
-
   render() {
     return (
       <div className="App">
