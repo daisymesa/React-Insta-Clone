@@ -1,0 +1,31 @@
+.post-header {
+    display: flex;
+    align-items: center; 
+}
+
+.user-profile-picture img {
+    border-radius: 50%;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.username-section {
+    font-size: .75rem;
+}
+
+.post-main-image img {
+    height: 500px;
+    width: 100%;
+}
+
+.icon-heart img {
+    height: 22px;
+}
+
+.interact-icons {
+    display: flex;
+}
+
+.interact-icons img {
+    padding: 4px 6px;
+}

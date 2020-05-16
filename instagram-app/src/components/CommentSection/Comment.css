@@ -1,0 +1,14 @@
+.user-comments {
+    display: flex;
+    padding: 0 5px;
+}
+
+.comment-text {
+    font-size: .75rem;
+    padding-left: 4px;
+}
+
+.post-likes {
+    font-size: .75rem;
+    padding-left: 9px;
+}
